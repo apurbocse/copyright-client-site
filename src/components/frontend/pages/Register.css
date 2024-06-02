@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&display=swap');
+
+.bodyyyy {
+    background-image: url('../../../../public/assets/images/bg2.jpg');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.heightpage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #55a155;
+}
+
+.down-container {
+    padding: 30px 30px 20px 30px;
+}
+
+.register-logo {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #55a155;
+    padding: 20px;
+}
+
+.register-logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+::placeholder {
+    font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+.register-form input[type="text"],
+.register-form input[type="number"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.register-form .password-container {
+    position: relative;
+}
+
+.register-form input[type="password"] {
+    padding-right: 40px;
+}
+
+.show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+.register-form button[type="submit"] {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #55a155;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #3c763d;
+}
+
+.forgot-password,
+.register-link {
+    color: #55a155 !important;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+}
+
+.d-flex a:hover {
+    color: #55a155;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+    .register-container {
+        padding: 0 20px;
+    }
+
+    .down-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .down-container {
+        padding: 20px 10px;
+    }
+
+    .register-form input[type="text"],
+    .register-form input[type="number"],
+    .register-form input[type="email"],
+    .register-form input[type="password"] {
+        margin: 10px 0;
+        padding: 8px;
+    }
+
+    .register-form button[type="submit"] {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .forgot-password,
+    .register-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .register-container {
+        padding: 5px;
+        border: 2px solid #55a155;
+        margin: 10px;
+    }
+
+    .heightpage {
+        min-height: 100vh;
+    }
+
+    .down-container {
+        padding: 15px;
+    }
+
+    .register-form input[type="text"],
+    .register-form input[type="number"],
+    .register-form input[type="email"],
+    .register-form input[type="password"] {
+        margin: 8px 0;
+        padding: 10px;
+    }
+
+    .register-form button[type="submit"] {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .forgot-password,
+    .register-link {
+        font-size: 14px;
+    }
+}
